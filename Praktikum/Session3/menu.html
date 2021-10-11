@@ -1,0 +1,101 @@
+<html>
+<head>
+ 
+	<title>Membuat Menu Dropdown Dengan CSS3 dan HTML5</title>
+ 
+</head>
+<body>
+ 
+	<style type="text/css">
+	html,body{
+		padding: 0;
+		margin:0;
+		font-family: sans-serif;
+	}
+ 
+	.menu{
+		background-color: #000000;
+	}
+ 
+	.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+ 
+	.menu > ul > li {
+		float: left;
+	}
+ 
+	
+	.menu li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+ 
+	.menu li a:hover{
+		background-color: #2525ff;
+	}
+ 
+	li.dropdown {
+		display: inline-block;
+	}
+ 
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #fff !important;
+	}
+ 
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		background-color: #f9f9f9;
+	}
+ 
+	.isi-dropdown a {
+		color: #3c3c3c !important;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #232323 !important;
+		background: #f3f3f3 !important;
+	}
+</style>
+ 
+ 
+<header class="header">
+	<div class="menu">
+ 
+		<ul>
+			<li><a href="https://myasyhari.github.io">Home</a></li>
+			<li class="dropdown"><a href="#">Praktikum</a>
+				<ul class="isi-dropdown">
+					<li><a href="https://myasyhari.github.io/Praktikum/Session1.html">Session 1</a></li>
+					<li><a href="#">Session 2</a></li>
+					<li><a href="#">Session 3</a></li>
+					<li><a href="#">Session 4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tentang Aku</a></li>
+		</ul>
+ 
+	</div>
+</header>
+ 
+<br/>
+ 
+<center>
+	<h1>Pemrograman Web UNIPMA <br/> Yusuf Asyhari</h1>
+</center>
+ 
+</body>
+</html>
