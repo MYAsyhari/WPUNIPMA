@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belajar Membuat Form </title>
+</head>
+<body>
+  <h3> Form HTML</h3>
+  <form action=" formulir.html" method="get">
+    <table>
+      <tr>
+        <td>Nama</td>
+        <td>: <input type="text" name="nama" value="Nama Kamu" /></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>: <input type="password" name="password" /></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>: <input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki - Laki
+              <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Hobi</td>
+        <td>
+            : <input type="checkbox" name="hobi_baca" /> Membaca Buku
+              <input type="checkbox" name="hobi_nulis" checked /> Menulis
+              <input type="checkbox" name="hobi_mancing" /> Memancing
+        </td>
+      </tr>
+      <tr>
+        <td>Asal Kota</td>
+        <td>
+          : <select name="asal_kota" >
+             <option value="Kota Jakarta"> Jakarta</option>
+             <option>Bandung</option>
+             <option value="Kota Semarang" selected>Semarang</option>
+          </select>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Komentar Anda</td>
+        <td>
+          : <textarea name="komentar" rows="5" cols="20">
+  Silahkan katakan isi hati anda
+  </textarea>
+        </td>
+      </tr>
+     
+      <tr>
+        <td>  <input type="submit" value="Mulai Proses!" ></td>
+      </tr>
+      
+    </table>
+  </form>
+</body>
+</html>
