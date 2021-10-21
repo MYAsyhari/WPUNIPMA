@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Layout 1 </title>
+  <style>
+    * {
+    margin:0; 
+    padding:0;
+    }
+    
+    .container {
+      background-color : black;
+      margin : auto ;
+      width : 1000px;
+    }
+
+    .header {
+      width : 100%;
+      height : 120px;
+      padding : 0px;
+      background-color : lightblue;
+    }
+
+    .judul {
+      font-family : arial;
+      margin-top : 0px;
+      padding : 50px 0px 0px 30px;
+      font-weight : bold;
+      font-size : 50px;
+    }
+
+/*Mulai Membuat Navigasi*/
+    .navigasi {
+      background-color : red;
+      padding-top : 10px;
+      padding-left : 20px;
+      padding-bottom : 10px;
+      width : 100%;
+      position : fixed;
+    }
+    
+    .logonavigasi {
+      display : inline-block;
+      font-size: 25px;
+      font-family: Helvetica, sans-serif;
+    }
+    
+    /*Mulai Membuat Menu*/
+    .menu {
+      display : inline-block;
+      float : right;
+      margin-right : 50px;
+    }
+    
+    .menu > ul > li {
+		  float: left;
+	  }
+
+    .menu ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .menu li {
+      background-color : blue;
+      width : 100px;
+      height : 20px;
+      border : none;
+	    margin-right :5px;
+      padding-top : 5px;
+      padding-bottom : 5px;
+    }
+
+	.menu li a {
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+    font-family: sans-serif;
+	}
+
+    .menu li:hover {
+      background-color: green;
+      cursor : pointer;
+    }
+
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+    margin-top :5px;
+	}
+  
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+    
+  .isi-dropdown li {
+      padding-top :10px;
+      padding-bottom : 5px;
+  }
+
+    /*Selesai Membuat Menu*/
+    /*Selesai Membuat Navigasi*/
+    
+    .sidebar {
+      background-color : green;
+      float : left;
+      width : 350px;
+      height : 300px;
+    }
+      
+    .body {
+      height : 500px;
+      width : 650px;
+      float : left;
+      background-color : grey;
+    }
+    
+    .footer {
+      background-color : red;
+      float : left;
+      width : 100%;
+      text-align : center;
+      color : white;
+    }
+    </style>
+	</head>
+	<body>
+    		<div class="navigasi">
+          <div class="logonavigasi">Mr.Asy</div>
+          <div class="menu">
+          
+            <ul>
+              <li><a href="https://myasyhari.github.io">Home</a></li>
+              <li class="dropdown"><a href="#">Praktikum</a>
+                <ul class="isi-dropdown">
+                  <li><a href="1">Session 1</a></li>
+                  <li><a href="2">Session 2</a></li>
+                  <li><a href="3">Session 3</a></li>
+                  <li><a href="4">Session 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tentang Aku</a></li>
+            </ul>
+          </div>
+        </div>
+    
+    <div class="container">
+    		<div class="header">
+           <h1 class="judul">WEB ASYHARI</h1> 
+        </div>
+      
+     		<div class="sidebar">Sidebar</div>
+        <div class="body">Body</div>
+        <div class="footer">Copyright © 2021 Mr. Asy</div>
+    <div style="clear:both"></div>
+    </div>
+	</body>
+</html>
