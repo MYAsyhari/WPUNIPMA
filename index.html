@@ -197,7 +197,22 @@
     <div class="banner"></div>
     <div class="space"></div>
     <div class="Content">
-	ISI KONTEN
+	<form name="persamaan">
+	<table>
+      		<tr>
+        	<td><label for="kewajiban"> kewajiban </label></td>
+  		<td>: <input type="number" name="kewajiban"></td>
+      		</tr>
+      		<tr>
+      		<td><label for="ekuitas"> Ekuitas </label></td>
+      		<td>: <input type="number" name="ekuitas"></td>
+      		</tr>
+      		<tr>
+      		<td> <p id="aset">Total Aset</p></td>
+      		</tr>
+    	</table>
+    	<input id="hitung" type="button" value="Hitung">  
+	</form>
     </div>
     <div class="biodata">
 	    <h3> AUTHOR </h3>
@@ -210,6 +225,20 @@
       Copyright © 2021 Moch Yusuf Asyhari
     </div>
   </div>
+  
+  <script>  
+    	const aset = document.getElementById('aset');
+    	const hitung = document.getElementById('hitung');
     
+    	function hitungaset(){
+      		let kewajiban = parseFloat(document.persamaan.kewajiban.value);
+    		let ekuitas = parseFloat(document.persamaan.ekuitas.value);
+      		const hasilaset = kewajiban + ekuitas;
+      		aset.innerHTML = hasilaset;
+      	}
+	hitung.addEventListener('click',hitungaset);
+  </script>
+
   </body>
+	
 </html>
